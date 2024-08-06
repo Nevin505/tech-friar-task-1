@@ -10,6 +10,7 @@
     --secondary:#FFF2D7;
     --secondary-hover:#c2540c;
     --max-screen-width:1320px;
+    --button-padding:0.5rem 1rem;
 }
 body{
     max-width: var(--max-screen-width);
@@ -21,6 +22,11 @@ body{
   background-color: var(--primary);
   padding-inline:0.5rem ;
   display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
 }
 
 .main-navBar>.nav-header{
@@ -35,8 +41,8 @@ border-radius: 50%;
 .navbar-menu{
     display: flex;
     width: 100%;
+ 
 }
-
 
 .navbar-item{
     margin: auto ;
@@ -56,7 +62,9 @@ border-radius: 50%;
 .hamburger-menu{
   display: none;
 }
-
+.hero{
+    padding-top:4rem ;
+}
 main>.hero-image{
     width: 100%;
     height: 28rem;
@@ -107,7 +115,6 @@ main>.hero-image{
  position: relative;
  justify-content: center;
 }
-
 .featured-section-overlay{
    position: absolute;
    top: -80%;
@@ -130,7 +137,6 @@ main>.hero-image{
     border-style: solid;
     padding: 5px;
   }
-
   .feature-channels-container{
     display: flex;
     max-width: 80%;
@@ -144,40 +150,38 @@ main>.hero-image{
     aspect-ratio: 1/1;
 }
 
-.about-section{
-    max-width: var(--max-screen-width);
-    display: flex;
-    justify-content: space-around;
-    gap: 4rem;
-    padding-top:2.8rem;
-    padding-inline: 6rem;
+/* About Section */
+    .about-section{
+        width: 100%;
+        display: flex;
+        flex-wrap:wrap ;
+        justify-content: space-evenly;
+        padding:0 0.8rem  ;
+        gap:2rem;
+}
+.about-me{
+    padding-top: 4rem;
+    min-width: 18rem;
+    max-width:24rem ;
+}
+.about-me>img{
+    box-shadow: 10px 25px 25px -15px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+    width: 100%;
+}
 
-}
-.about-image{
-    border: 2px solid red;
-    min-width: 20rem;
-    max-width: 24rem;
-    height: 24rem;
-    margin-inline: auto;
-}
-.about-image>img{
-    width:100% ;
-    height: 100%;
-    padding-top: 2.8rem;
-}
 .about-content{
+    min-width: 14rem;
+    max-width: 29rem;
+    border: 2px solid orange;
     display: flex;
     flex-direction: column;
-    border: 2px solid green;
-    justify-content: flex-start;
-    gap: 1rem;
-    font-weight: lighter;
-    padding-inline: 1rem;
+    gap: 1.2rem;
 }
+
 .about-content>button{
-    max-width: fit-content;
-    padding:0.6rem 1.2rem ;
-    border-radius: 1rem;
+width: fit-content;
+padding: var(--button-padding);
+border-radius: 1.2rem;
 }
 
 
@@ -205,9 +209,7 @@ main>.hero-image{
            left: 14%;
            right: 10%;
         }  
-        .about-section{
-            flex-direction: column;
-        }
+     
         .featured-section{
             padding-inline:1rem
         }
