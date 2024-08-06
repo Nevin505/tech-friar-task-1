@@ -9,6 +9,12 @@
     --primary:#f98866;
     --secondary:#FFF2D7;
     --secondary-hover:#c2540c;
+    --max-screen-width:1320px;
+}
+body{
+    max-width: var(--max-screen-width);
+    margin: auto;
+    background-color: var(--secondary);
 }
 
 .main-navBar{
@@ -90,28 +96,90 @@ main>.hero-image{
     cursor: pointer;
     background-color: var(--primary);
 }
+/* Featured Section */
+.featured-section{
+    padding-top:2.8rem;
+    padding-inline:6rem;
+}
+.featured-section-title{
+ padding-bottom: 0.5rem;
+ display: flex;
+ position: relative;
+ justify-content: center;
+}
 
+.featured-section-overlay{
+   position: absolute;
+   top: -80%;
+   background-color: white;
+   padding-inline:0.4rem ;
+   font-size: xx-large;
+   font-weight: 900;
+}
+.featured-section-border-varaiant1 {
+    flex: 1;
+    border-image: linear-gradient(to right, #ffffff 0%, #bebaba 100%) 1;
+    border-width: 2px 0 0 0;
+    border-style: solid;
+    padding: 5px;
+  }
+  .featured-section-border-varaiant2 {
+    flex: 1;
+    border-image: linear-gradient(to left, #ffffff 0%, #bebaba 100%) 1;
+    border-width: 2px 0 0 0;
+    border-style: solid;
+    padding: 5px;
+  }
 
-/* about section Styles */
-.about-section{
+  .feature-channels-container{
     display: flex;
-    /* flex-wrap: wrap; */
-    gap: 2rem;
-    padding-top: 4rem;
-    padding-inline: 4rem;
+    max-width: 80%;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+    padding-top : 2rem;
+  }
+.feature-channels-container>div{
+    width: 60px;
+    aspect-ratio: 1/1;
+}
+
+.about-section{
+    max-width: var(--max-screen-width);
+    display: flex;
+    justify-content: space-around;
+    gap: 4rem;
+    padding-top:2.8rem;
+    padding-inline: 6rem;
+
 }
 .about-image{
     border: 2px solid red;
-    max-width: 22rem;
+    min-width: 20rem;
+    max-width: 24rem;
+    height: 24rem;
+    margin-inline: auto;
 }
-
+.about-image>img{
+    width:100% ;
+    height: 100%;
+    padding-top: 2.8rem;
+}
 .about-content{
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    line-height: 1.5rem;
     border: 2px solid green;
+    justify-content: flex-start;
+    gap: 1rem;
+    font-weight: lighter;
+    padding-inline: 1rem;
 }
+.about-content>button{
+    max-width: fit-content;
+    padding:0.6rem 1.2rem ;
+    border-radius: 1rem;
+}
+
 
 /* Resposnive */
 @media (max-width:780px){
@@ -136,11 +204,15 @@ main>.hero-image{
         .hero-content{
            left: 14%;
            right: 10%;
-        }    
-        
-        /* .about-section{
+        }  
+        .about-section{
             flex-direction: column;
-        } */
+        }
+        .featured-section{
+            padding-inline:1rem
+        }
+    
+
 }
 
 @media(max-width:640px){
