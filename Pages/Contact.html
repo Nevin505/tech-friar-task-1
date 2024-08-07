@@ -36,24 +36,28 @@
       </section>
       <!-- User Contact Form -->
       <section  class="contact-form-container">
-          <form action="" class="contact-form">
+          <form id="contact-form" >
              <div>
-                <label for="">Your Name</label>
-                <input type="text">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" >
+                 <p id="errorNameMessage"></p>
              </div>
              <div>
-                <label for="">Your Email</label>
-                <input type="email">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required>
+                <p id="errorEmailMessage"></p>
              </div>
              <div>
-                <label for="">Subject</label>
-                <input type="text">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" >
+                <p id="errorSubjectMessage"></p>
              </div>
              <div>
-                <label for="">Your message</label>
-                <textarea name="" id="" rows="4" cols="50"></textarea>
+                <label for="message">Your message</label>
+                <textarea name="message" id="message" rows="4" cols="50" ></textarea>
+                <p id="errorMessage"></p>
              </div>
-             <button type="button">Submit</button>
+             <button type="submit">Submit</button>
           </form>
       </section>
     </main>
