@@ -12,6 +12,26 @@
   --white: white;
 }
 
+@font-face {
+  font-family: 'Roboto';
+  src: url('/Assets/Font/roboto-bold-webfont.woff2') format('woff2'),
+       url('/Assets/Font/roboto-bold-webfont.woff') format('woff');
+
+font-weight: bold;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url('/Assets/Font/roboto-light-webfont.woff2') format('woff2'),
+  url('/Assets/Font/roboto-light-webfont.woff') format('woff');
+  font-weight: lighter;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url('/Assets/Font/roboto-regular-webfont.woff2') format('woff2'),
+  url('/Assets/Font/roboto-regular-webfont.woff') format('woff');
+  font-weight: normal;
+}
+
 body {
   max-width: var(--max-screen-width);
   margin: auto;
@@ -32,9 +52,19 @@ color: var(--secondary-hover);
 .hero-title{
   width: fit-content;
   margin: auto;
-  line-height: 1.8rem;
   text-align: center;
   color: var(--white);
+  & h1{
+    font-family: 'Roboto',sans-serif;
+    font-weight: bold;
+    font-size: xx-large;
+    padding-bottom: 0.4rem;
+  }
+  & p {
+    font-family: 'Roboto',sans-serif;
+    font-weight: 400;
+    font-size: larger;
+  }
 }
 
 .about-me-container{

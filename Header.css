@@ -11,6 +11,25 @@
   --max-screen-width: 1420px;
   --button-padding: 0.5rem 1rem;
 }
+@font-face {
+  font-family: 'Roboto';
+  src: url('/Assets/Font/roboto-bold-webfont.woff2') format('woff2'),
+       url('/Assets/Font/roboto-bold-webfont.woff') format('woff');
+
+font-weight: bold;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url('/Assets/Font/roboto-light-webfont.woff2') format('woff2'),
+  url('/Assets/Font/roboto-light-webfont.woff') format('woff');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url('/Assets/Font/roboto-light-webfont.woff2') format('woff2'),
+  url('/Assets/Font/roboto-light-webfont.woff') format('woff');
+  font-weight: normal;
+}
 .main-navBar {
   background-color: var(--primary);
   padding-inline: 0.5rem;
@@ -46,6 +65,8 @@
 
 .navbar-links {
   text-decoration: none;
+  font-family: 'Roboto',sans-serif;
+  font-weight: bold;
   color: var(--secondary);
 }
 .navbar-links:hover {

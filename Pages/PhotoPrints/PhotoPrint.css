@@ -12,4 +12,39 @@
     --button-padding: 0.5rem 1rem;
     --white: white;
   }
-  
+  main{
+    padding-top: 4rem;
+  }
+  #hero{
+    padding: 12rem;
+    background-image: url(/images//photo-prints-background.jpg);
+    background-size: cover;
+    background-position: bottom;
+  }
+  .hero-title-container{
+    width: fit-content;
+    margin: auto;
+    color: var(--white);
+    text-align: center;
+    & h1{
+        font-weight: bolder;
+        font-size: xx-large;
+    }
+    & p{
+        padding-top: 0.4rem;
+        font-size: large;
+    }
+  }
+
+  .photo-print-sales{
+    max-width: 60%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+  @media (max-width: 780px) {
+    #hero {
+        padding: 12rem 2rem;
+    }
+  }

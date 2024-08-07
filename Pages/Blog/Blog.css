@@ -12,6 +12,25 @@
   --white: white;
 }
 
+@font-face {
+  font-family: 'Roboto';
+  src: url('/Assets/Font/roboto-bold-webfont.woff2') format('woff2'),
+       url('/Assets/Font/roboto-bold-webfont.woff') format('woff');
+
+font-weight: bold;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url('/Assets/Font/roboto-light-webfont.woff2') format('woff2'),
+  url('/Assets/Font/roboto-light-webfont.woff') format('woff');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url('/Assets/Font/roboto-light-webfont.woff2') format('woff2'),
+  url('/Assets/Font/roboto-light-webfont.woff') format('woff');
+  font-weight: normal;
+}
 body {
   max-width: var(--max-screen-width);
   margin: auto;
@@ -35,10 +54,15 @@ main{
   color: var(--white);
 
   & h1 {
+    font-family: 'Roboto',sans-serif;
+    font-weight: bold;
     font-size: xx-large;
+    padding-bottom: 0.4rem;
   }
 
   & p {
+    font-family: 'Roboto',sans-serif;
+    font-weight: 400;
     font-size: larger;
   }
 }
@@ -55,6 +79,10 @@ main{
   border-bottom: 0.2rem rgb(226, 226, 226) solid;
   padding-bottom: 0.5rem;
   position: relative;
+  & h2{
+   font-family: 'Roboto',sans-serif;
+   font-weight: 400;
+  }
 }
 /* Inner Orange Arrow */
 .inner-arrow::after {
@@ -102,13 +130,16 @@ main{
 
      & h3{
         width: 80%;
+        font-family: 'Roboto';
         font-size: medium;
-        font-weight: bold;
+        font-weight: normal;
      }
      & p{
         font-size: medium;
-        font-weight: lighter;
         text-align: center;
+        font-family: 'Roboto';
+        font-size: medium;
+        font-weight: normal;
      }
 }
 
