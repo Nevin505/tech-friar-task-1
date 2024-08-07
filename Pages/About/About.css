@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary: #f98866;
+  --secondary: #fff2d7;
+  --secondary-hover: #c2540c;
+  --max-screen-width: 1420px;
+  --button-padding: 0.5rem 1rem;
+  --white: white;
+}
+
+body {
+  max-width: var(--max-screen-width);
+  margin: auto;
+}
+main{
+    padding-top: 4rem;
+}
+strong{
+color: var(--secondary-hover);
+}
+#hero{
+    padding: 10rem;
+    background-image: url(/images/About-background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hero-title{
+  width: fit-content;
+  margin: auto;
+  line-height: 1.8rem;
+  text-align: center;
+  color: var(--white);
+}
+
+.about-me-container{
+  width: 95%;
+  margin: auto;
+  padding:2rem 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.about-my-info-container{
+  flex: 1;
+  max-width: 34rem;
+  display: flex;
+  padding: 0.5rem;
+  flex-direction: column;
+  gap: 0.5rem;
+  & ul{
+    padding-left: 2rem;
+
+  }
+}
+.personal-media-links-container{
+width: 18rem;
+padding: 0.4rem;
+border: 1px grey solid;
+}
+
+.inner-arrow {
+  border-bottom: 0.2rem rgb(226, 226, 226) solid;
+  padding-bottom: 0.5rem;
+  position: relative;
+}
+/* Inner Orange Arrow */
+.inner-arrow::after {
+  content: "";
+  position: absolute;
+  height: 0.15rem;
+  width: 2rem;
+  background-color: orange;
+  bottom: -8%;
+}
+
+/* Social media */
+.social-media-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+  padding-top: 2.5rem;
+}
+.social-medias{
+  width: 7.2rem;
+  padding: 0.4rem;
+  margin: auto;
+  & a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem; 
+    color: black;
+  }
+  & span{
+    font-weight: bold;
+  }
+}
+.social-medias:hover{
+  & a{
+    color: var(--secondary-hover);
+  }
+}
+@media(max-width:780px){
+  /* .about-my-info-container{
+   width: 100%;
+  } */
+  #hero{
+    padding:10rem 4rem;
+  }
+  .personal-media-links-container{
+    width: 88%;
+  }
+
+}
