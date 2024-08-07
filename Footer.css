@@ -1,0 +1,62 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+  :root {
+    --primary: #f98866;
+    --secondary: #fff2d7;
+    --secondary-hover: #c2540c;
+    --max-screen-width: 1420px;
+    --button-padding: 0.5rem 1rem;
+  }
+  footer{
+    background-color: rgb(41, 39, 39);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+
+    & ul{
+        display:flex;
+        & li:first-child{
+           list-style: none; 
+        }
+        & li{
+            margin-left: 1.2rem;
+        }
+    }
+}
+
+
+/* Social Icons */
+.social-icons{
+    width: 100%;
+    max-width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 0.6rem 1.2rem;
+    border-bottom: 1px solid black;
+    & img{
+        margin-left: 0.6rem;
+        cursor: pointer;
+    }
+}
+.footer-terms{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+    max-width: 80%;
+    text-align: center;
+}
+@media (max-width: 780px) {
+    .contact-details{
+      width: 66%; 
+      left: 16%;
+      bottom: 20%;
+    }
+  
+  }
+  
