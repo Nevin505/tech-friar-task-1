@@ -9,12 +9,15 @@
   --secondary-hover: #c2540c;
   --max-screen-width: 1420px;
   --button-padding: 0.5rem 1rem;
-  --white:white;
+  --white: white;
 }
 
-body{
-    max-width: var(--max-screen-width);
-    margin: auto;
+body {
+  max-width: var(--max-screen-width);
+  margin: auto;
+}
+main{
+    padding-top: 4rem
 }
 #hero {
   padding: 10rem;
@@ -29,46 +32,87 @@ body{
   line-height: 2.25rem;
   text-align: center;
   color: var(--white);
-  
-  & h1{
+
+  & h1 {
     font-size: xx-large;
   }
 
-  & p{
+  & p {
     font-size: larger;
   }
 }
-.blog-post-container{
-    max-width: 90%;
-    margin: auto;
-    padding-top: 4rem;
-    & h2{
-        text-transform: uppercase;
-        font-size: medium;
-    }
+.blog-post-container {
+  max-width: 90%;
+  margin: auto;
+  padding-top: 4rem;
+  & h2 {
+    text-transform: uppercase;
+    font-size: medium;
+  }
 }
-.inner-arrow{
+.inner-arrow {
   border-bottom: 0.2rem rgb(226, 226, 226) solid;
   padding-bottom: 0.5rem;
   position: relative;
 }
 /* Inner Orange Arrow */
-.inner-arrow::after{
-    content: '';
-    position: absolute;
-    height: 0.15rem;
-    width: 120px;
-    background-color: orange;
-    bottom: -8%;
+.inner-arrow::after {
+  content: "";
+  position: absolute;
+  height: 0.15rem;
+  width: 120px;
+  background-color: orange;
+  bottom: -8%;
 }
 
 /* Blog List Styles */
-.blog-list{
-    
+.blog-list {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 1rem;
+  
 }
-@media(max-width:780px){
-    #hero{
-        padding: 10rem  4rem;
-    }
+/* Each blog Conatiner Desigin */
+.blogs{
+    width: 20.5rem;
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    text-align: center;
+    border: 2px solid green;
+    padding: 0.4rem;
+    
+     & img{
+        max-width: 19.5rem;
+        height: 14rem;
+        object-fit: cover;
+        border-radius: 0.5rem;
+     }
+     
+     & span{
+        width: 4rem;
+        height: 0.1rem;
+        background-color: var(--primary);
+     }
+
+     & h3{
+        width: 80%;
+        font-size: medium;
+        font-weight: bold;
+     }
+     & p{
+        font-size: medium;
+        font-weight: lighter;
+        text-align: center;
+     }
 }
 
+@media (max-width: 780px) {
+  #hero {
+    padding: 10rem 4rem;
+  }
+}
