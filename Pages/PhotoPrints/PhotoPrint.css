@@ -21,14 +21,14 @@
   }
   @font-face {
     font-family: 'Roboto';
-    src: url('/Assets/Font/roboto-light-webfont.woff2') format('woff2'),
-    url('/Assets/Font/roboto-light-webfont.woff') format('woff');
+    src: url('../../Assets/Font/roboto-light-webfont.woff2') format('woff2'),
+    url('../../Assets/Font/roboto-light-webfont.woff') format('woff');
     font-weight: lighter;
   }
   @font-face {
     font-family: 'Roboto';
-    src: url('/Assets/Font/roboto-regular-webfont.woff2') format('woff2'),
-    url('/Assets/Font/roboto-regular-webfont.woff') format('woff');
+    src: url('../../Assets/Font/roboto-regular-webfont.woff2') format('woff2'),
+    url('../../Assets/Font/roboto-regular-webfont.woff') format('woff');
     font-weight: normal;
   }
   main{
@@ -40,7 +40,7 @@
   }
   #hero{
     padding: 12rem;
-    background-image: url(/images/Webp/photo-prints-background.webp);
+    background-image: url(../../images/Webp/photo-prints-background.webp);
     background-size: cover;
     background-position: bottom;
   }
