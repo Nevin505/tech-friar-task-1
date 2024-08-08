@@ -37,6 +37,16 @@
 
   strong{
     color: var(--secondary-hover);
+    & a{
+      font-family: 'Roboto',sans-serif;
+  font-size: medium ;
+  font-weight: normal;
+    }
+  }
+  p,li{
+    font-family: 'Roboto',sans-serif;
+  font-size: medium ;
+  font-weight: normal;
   }
   #hero{
     padding: 12rem 2rem;

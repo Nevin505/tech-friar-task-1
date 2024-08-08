@@ -151,8 +151,8 @@ body {
   }
 
   & p{
-    font-family: 'Roboto',sans-serif;
-  font-size: medium;
+   font-family: 'Roboto',sans-serif;
+  font-size: medium ;
   font-weight: normal;
   }
 }
@@ -196,7 +196,25 @@ body {
   font-size: xx-large;
   color: whitesmoke;
 }
+.newsletter-container{
+  width: 80%;
+  margin: auto;
+  padding: 0.8rem;
+}
+.newsLetter{
+width: fit-content;
+margin: auto;
+& input{
+  padding: 0.4rem 0.8rem; 
+  border: none;
+}
+& button{
+  padding: 0.4rem 0.6rem;
+  border: none;
+  cursor: pointer;
+}
 
+}
 /* Resposnive */
 @media (max-width: 780px) {
 
@@ -214,6 +232,9 @@ body {
    }
   .featured-section {
     padding-inline: 1rem;
+  }
+  .newsletter-container{
+    width: 95%;
   }
 
 }

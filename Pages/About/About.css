@@ -43,7 +43,11 @@ main{
     text-decoration: none;
     color: var(--secondary-hover);
   }
-
+p,li,a{
+  font-family: 'Roboto',sans-serif;
+  font-size: medium ;
+  font-weight: normal;
+}
 #hero{
     padding: 10rem 0;
     background-image: url(../../images/Webp/About-background.webp);
