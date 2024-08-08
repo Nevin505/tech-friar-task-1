@@ -12,12 +12,35 @@
     --button-padding: 0.5rem 1rem;
     --white: white;
   }
+  @font-face {
+    font-family: 'Roboto';
+    src: url('/Assets/Font/roboto-bold-webfont.woff2') format('woff2'),
+         url('/Assets/Font/roboto-bold-webfont.woff') format('woff');
+  
+  font-weight: bold;
+  }
+  @font-face {
+    font-family: 'Roboto';
+    src: url('/Assets/Font/roboto-light-webfont.woff2') format('woff2'),
+    url('/Assets/Font/roboto-light-webfont.woff') format('woff');
+    font-weight: lighter;
+  }
+  @font-face {
+    font-family: 'Roboto';
+    src: url('/Assets/Font/roboto-regular-webfont.woff2') format('woff2'),
+    url('/Assets/Font/roboto-regular-webfont.woff') format('woff');
+    font-weight: normal;
+  }
   main{
     padding-top: 4rem;
   }
+
+  strong{
+    color: var(--secondary-hover);
+  }
   #hero{
     padding: 12rem;
-    background-image: url(/images//photo-prints-background.jpg);
+    background-image: url(/images/Webp/photo-prints-background.webp);
     background-size: cover;
     background-position: bottom;
   }
@@ -27,21 +50,116 @@
     color: var(--white);
     text-align: center;
     & h1{
-        font-weight: bolder;
-        font-size: xx-large;
+      font-family: 'Roboto',sans-serif;
+      font-weight: bold;
+      font-size: xx-large;
+      padding-bottom: 0.4rem;
     }
-    & p{
-        padding-top: 0.4rem;
-        font-size: large;
+  
+    & p {
+      font-family: 'Roboto',sans-serif;
+      font-weight: 400;
+      font-size: larger;
     }
   }
 
   .photo-print-sales{
-    max-width: 60%;
     padding: 2rem;
     display: flex;
     flex-direction: column;
+    /* flex: 1; */
+    max-width: 50rem;
     gap: 0.6rem;
+  }
+  .photo-print-sales-section-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .featured-section-border-varaiant1 {
+    flex: 1;
+    border-image: linear-gradient(to right, #ffffff 0%, #bebaba 100%) 1;
+    border-width: 2px 0 0 0;
+    border-style: solid;
+    padding: 5px;
+  }
+
+  strong{
+    & a{
+    text-decoration: none;
+      color: var(--secondary-hover);
+    }
+  }
+
+  /* Image Size Styles */
+  .image-size{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 0.6rem;
+    padding-inline: 0.8rem;
+    flex-wrap:wrap ;
+  }
+  .image-product-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+    & h2{
+      font-family: 'Roboto',sans-serif;
+      font-weight: normal;
+      font-size: medium;
+    }
+    & h3{
+      font-size: li;
+    }
+  }
+  /* Product Option Details */
+  .product-options{
+    padding:1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  .product-options__list{
+    padding-inline: 1rem;
+    display: flex;
+    justify-content: center;
+     align-items: center;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    & li{
+        list-style: none;
+        width: 8rem;
+        padding: 0.4rem 0.6rem;
+        border: 1px solid black;
+        text-align: center;
+        cursor: pointer;
+    }
+    & li:hover{
+      color: var(--secondary-hover);
+    }
+  }
+  /* Payement Container Styles */
+  .guarantee-info{
+    padding:0 2rem;
+    & ul{
+      padding-left: 2.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      justify-content: space-evenly;
+      & li{
+       width: 18rem;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 0.4rem;
+      }
+    }
   }
   @media (max-width: 780px) {
     #hero {

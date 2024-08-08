@@ -39,36 +39,26 @@ body {
 .hero {
   padding-top: 4rem;
 }
-main > .hero-image {
-  width: 100%;
-  height: 28rem;
-  /* height:; */
-}
 .hero-image {
-  position: relative;
-}
-.hero-image > img {
   width: 100%;
-  height: 100%;
+  padding: 12rem;
+  background-image: url('/images/Webp/landing-Page-Main.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero-content {
-  border: 2px solid red;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-  position: absolute;
-  top: 50%;
-  left: 22%;
-  right: 25%;
-}
-.hero-title {
-  width: 80%;
-  font-size: 3rem;
-  word-wrap: break-word;
-  color: var(--secondary);
-  font-weight: bold;
+  & h1{
+      width: fit-content;
+      margin: auto;
+      font-family: 'Roboto',sans-serif;
+    font-weight: bold;
+    font-size: xx-large;
+  }
 }
 .hero-content > button {
   padding-inline: 0.8rem;
@@ -210,11 +200,18 @@ main > .hero-image {
 /* Resposnive */
 @media (max-width: 780px) {
 
-  .hero-content {
+  /* .hero-content {
     left: 14%;
     right: 10%;
-  }
-
+  } */
+   .hero-image{
+    padding: 12rem 0rem;
+   }
+   .hero-content{
+    & h1{
+      font-size: x-large;
+    }
+   }
   .featured-section {
     padding-inline: 1rem;
   }
