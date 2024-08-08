@@ -142,12 +142,7 @@ border: 1px grey solid;
   }
 }
 @media(max-width:780px){
-  /* .about-my-info-container{
-   width: 100%;
-  } */
-  #hero{
-    /* padding:10rem 4; */
-  }
+
   .personal-media-links-container{
     width: 88%;
   }
