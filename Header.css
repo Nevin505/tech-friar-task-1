@@ -53,14 +53,19 @@ font-weight: bold;
 .navbar-menu {
   display: flex;
   width: 100%;
+
 }
 
 .navbar-item {
   margin: auto;
+  display: block;
   list-style: none;
   font-size: larger;
   font-weight: bolder;
   text-align: center;
+  text-decoration: none;
+  color: var(--secondary);
+
 }
 
 .navbar-links {
