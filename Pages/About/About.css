@@ -46,7 +46,7 @@ main{
 
 #hero{
     padding: 10rem;
-    background-image: url(/images/Webp/About-background.webp);
+    background-image: url(../../images/Webp/About-background.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
