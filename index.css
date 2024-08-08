@@ -157,10 +157,12 @@ body {
   }
 }
 
-.about-content > button {
+.about-content > a {
   width: fit-content;
   padding: var(--button-padding);
-  border-radius: 1.2rem;
+  border:   var(--primary) solid 2px;
+   border-radius: 0.5rem;
+   text-decoration: none;
 }
 
 /* Contact Card */
@@ -218,10 +220,6 @@ margin: auto;
 /* Resposnive */
 @media (max-width: 780px) {
 
-  /* .hero-content {
-    left: 14%;
-    right: 10%;
-  } */
    .hero-image{
     padding: 12rem 0rem;
    }
