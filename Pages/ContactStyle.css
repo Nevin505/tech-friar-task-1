@@ -129,7 +129,7 @@ padding: 0.8rem 0rem;
 /* Styles For the Conatct Form */
 #contact-form-container {
   padding: 2rem;
-  width: 40%;
+  width: 20%;
 
 }
 #contact-form {
@@ -139,7 +139,7 @@ padding: 0.8rem 0rem;
    align-items: center;
    margin: auto;
   gap: 1rem;
-  width: 80%;
+  width: 60%;
 }
 #contact-form>div{
     display: flex;
@@ -196,5 +196,8 @@ textarea{
   }
   #contact-form-container{
    width: 80%;
+  }
+  #contact-form{
+    width: 60%;
   }
 }
