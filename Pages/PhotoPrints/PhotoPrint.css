@@ -39,7 +39,7 @@
     color: var(--secondary-hover);
   }
   #hero{
-    padding: 12rem;
+    padding: 12rem 2rem;
     background-image: url(../../images/Webp/photo-prints-background.webp);
     background-size: cover;
     background-position: bottom;
@@ -58,7 +58,7 @@
   
     & p {
       font-family: 'Roboto',sans-serif;
-      font-weight: 400;
+      font-weight: lighter;
       font-size: larger;
     }
   }
@@ -159,10 +159,5 @@
         justify-content: center;
         gap: 0.4rem;
       }
-    }
-  }
-  @media (max-width: 780px) {
-    #hero {
-        padding: 12rem 2rem;
     }
   }
