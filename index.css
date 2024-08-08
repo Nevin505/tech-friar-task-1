@@ -42,7 +42,7 @@ body {
 .hero-image {
   width: 100%;
   padding: 12rem;
-  background-image: url('/images/Webp/landing-Page-Main.webp');
+  background-image: url('./images/Webp/landing-Page-Main.webp');
   background-repeat: no-repeat;
   background-size: cover;
 }
