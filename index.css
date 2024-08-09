@@ -111,10 +111,7 @@ body {
   margin: auto;
   padding-top: 2rem;
 }
-.feature-channels-container > div {
-  width: 60px;
-  aspect-ratio: 1/1;
-}
+
 
 /* About Section */
 .about-section {
